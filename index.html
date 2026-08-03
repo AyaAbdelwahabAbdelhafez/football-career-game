@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="مسيرة اللاعب الاحترافية — لعبة محاكاة مسيرة كرة قدم: ابدأ من الأكاديمية، العب المباريات، تدرّب، تفاوض على الانتقالات، وابنِ إرثك حتى الاعتزال." />
+    <meta name="theme-color" content="#070B14" />
+    <meta property="og:title" content="مسيرة اللاعب الاحترافية" />
+    <meta property="og:description" content="لعبة محاكاة مسيرة كرة قدم من الأكاديمية إلى القمة." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23E4B94B'/%3E%3Ccircle cx='32' cy='32' r='30' fill='none' stroke='%23070B14' stroke-width='2'/%3E%3Cpath d='M32 14 L42 22 L38 34 L26 34 L22 22 Z' fill='%23070B14'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>مسيرة اللاعب الاحترافية</title>
+    <style>
+      html, body { margin: 0; padding: 0; background: radial-gradient(ellipse at top, #0E1830 0%, #070B14 60%, #04070D 100%); min-height: 100vh; }
+      #root { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+      .boot-loader { display:flex; flex-direction:column; align-items:center; gap:14px; font-family: system-ui, sans-serif; color:#8B97AC; }
+      .boot-ring { width:42px; height:42px; border-radius:50%; border:3px solid #23304a; border-top-color:#E4B94B; animation: boot-spin 0.9s linear infinite; }
+      @keyframes boot-spin { to { transform: rotate(360deg); } }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="boot-loader"><div class="boot-ring"></div><span>جارِ التحميل…</span></div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
